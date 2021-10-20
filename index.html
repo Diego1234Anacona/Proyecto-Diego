@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="titulo_accion_formulario" class="my-5"></h2>
+
+        <section class="formulario">
+            <form class="d-flex justify-content-center" id="mi_formulario">
+                <div class="mb-3">
+                    <label for="nombre_user" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="nombre_user">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono_user" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telefono_user">
+                </div>
+                <div class="mb-3">
+                    <label for="direccion_user" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="direccion_user">
+                </div>
+                <button id="boton_formulario" type="button" class="btn btn-primary" onclick="guardar_data()">Guardar</button>
+        </section>
+        
+        </form>
+
+        <h4>Lista de datos</h4>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="data-usuario-read"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/code2.js"></script>
+</body>
+
+</html>
